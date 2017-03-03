@@ -1,7 +1,5 @@
 from distutils.core import setup
 
-from sklearn2pmml import __license__, __version__
-
 setup(
     name = "sklearn2pmml",
     version = __version__,
@@ -16,8 +14,8 @@ setup(
     package_data = {
         "sklearn2pmml.resources" : ["*.jar"]
     },
-    install_requires = [
+    requires = [
         "scikit-learn>=0.16.0",
-        "sklearn_pandas>=0.0.10"
+        "sklearn-pandas>=0.0.10"
     ]
 )
